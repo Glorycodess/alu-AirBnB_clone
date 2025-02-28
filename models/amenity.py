@@ -1,15 +1,13 @@
 #!/usr/bin/python3
-"""Defines the Amenity class."""
+"""Amenity module for the AirBnB clone"""
 
 from models.base_model import BaseModel
-import json
 
 
 class Amenity(BaseModel):
-    """Represent an amenity.
-
-    Attributes:
-        name (str): The name of the amenity.
-    """
+    """Amenity class"""
 
     name = ""
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
